@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIm-u1-f5C">
+                    <rect key="frame" x="45" y="43" width="258" height="69"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="uOX-DV-dgt"/>
+                    </constraints>
+                    <state key="normal" title="打开相机"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="uOX-DV-dgt"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="uOX-DV-dgt"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="openCamore:" destination="-1" eventType="touchUpInside" id="Mil-aE-0yg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44h-Nq-VOz">
+                    <rect key="frame" x="45" y="154" width="258" height="66"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="rSn-2e-LKK"/>
+                    </constraints>
+                    <state key="normal" title="打开相册"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rSn-2e-LKK"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="rSn-2e-LKK"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="openImgBook:" destination="-1" eventType="touchUpInside" id="buF-o7-AVB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="44h-Nq-VOz" firstAttribute="top" secondItem="yIm-u1-f5C" secondAttribute="bottom" constant="42" id="8fp-q1-PnD"/>
+                <constraint firstItem="yIm-u1-f5C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="71" id="Akm-f7-MwP"/>
+                <constraint firstAttribute="trailing" secondItem="yIm-u1-f5C" secondAttribute="trailing" constant="71" id="Xxs-v0-IOF"/>
+                <constraint firstAttribute="trailing" secondItem="44h-Nq-VOz" secondAttribute="trailing" constant="71" id="gRM-63-LRA"/>
+                <constraint firstItem="yIm-u1-f5C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="43" id="jkF-h2-O7M"/>
+                <constraint firstItem="44h-Nq-VOz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="71" id="lr3-Yq-L1v"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Akm-f7-MwP"/>
+                    <exclude reference="Xxs-v0-IOF"/>
+                    <exclude reference="jkF-h2-O7M"/>
+                    <exclude reference="8fp-q1-PnD"/>
+                    <exclude reference="gRM-63-LRA"/>
+                    <exclude reference="lr3-Yq-L1v"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Akm-f7-MwP"/>
+                    <include reference="Xxs-v0-IOF"/>
+                    <include reference="jkF-h2-O7M"/>
+                    <include reference="8fp-q1-PnD"/>
+                    <include reference="gRM-63-LRA"/>
+                    <include reference="lr3-Yq-L1v"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
